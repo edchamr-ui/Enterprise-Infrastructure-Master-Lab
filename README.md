@@ -1,225 +1,210 @@
-# Enterprise Infrastructure Master Lab
+<div align="center">
 
-> Designing, building and operating a modern enterprise infrastructure from the ground up.
+# BETELGEUSE INFRA (PVT) LTD
 
----
+## Enterprise Infrastructure Master Lab
 
-## Project Overview
-
-The Enterprise Infrastructure Master Lab (EIML) is a comprehensive infrastructure engineering project designed to simulate a real-world enterprise IT environment.
-
-The objective of this project is to design, deploy, secure, automate, monitor and document a complete enterprise infrastructure using industry-standard technologies and best practices.
-
-Unlike isolated lab exercises, this project follows the lifecycle of a production enterprise implementation—from initial planning and architecture through deployment, testing, automation, monitoring, security and hybrid cloud integration.
+### Building Secure Infrastructure For Tomorrow
 
 ---
 
-## Project Objectives
+**Enterprise Network Engineering | Data Centre | Cybersecurity | Cloud | Automation | DevOps**
 
-- Build a production-style enterprise network
-- Deploy a multi-site campus infrastructure
-- Design a modern data centre using Spine-Leaf architecture
-- Implement secure enterprise routing and switching
-- Deploy Windows Server and Active Directory services
-- Build enterprise Linux infrastructure
-- Configure high availability and disaster recovery
-- Deploy enterprise monitoring and security platforms
-- Automate infrastructure using Infrastructure as Code
-- Integrate on-premises infrastructure with AWS Hybrid Cloud
+</div>
 
 ---
 
-## Technologies
+# Executive Summary
 
-### Enterprise Networking
+The **Betelgeuse Infra Enterprise Infrastructure Master Lab (EIML)** is a flagship infrastructure engineering project that demonstrates the design, implementation, operation and documentation of a modern enterprise IT environment.
 
-- Cisco IOS
-- Cisco Nexus
-- OSPF
-- BGP
-- HSRP / VRRP
-- EtherChannel
-- VLANs
-- VXLAN
-- EVPN
+Rather than focusing on isolated technologies, this project follows the complete lifecycle of a production-style infrastructure deployment—from planning and architecture through implementation, testing, automation, monitoring, security, disaster recovery and hybrid cloud integration.
 
-### Security
-
-- FortiGate
-- IPSec VPN
-- SSL VPN
-- NAT
-- ACLs
-- Zero Trust
-
-### Servers
-
-- Windows Server 2022
-- Active Directory
-- DNS
-- DHCP
-- Ubuntu Server
-- Rocky Linux
-- PostgreSQL
-
-### Virtualization
-
-- VMware Workstation Pro
-- VMware ESXi
-- vCenter
-
-### Monitoring
-
-- Zabbix
-- Grafana
-- Prometheus
-- Wazuh
-
-### Automation
-
-- Python
-- Ansible
-- Terraform
-- Git
-- GitHub
-
-### Containers
-
-- Docker
-- Kubernetes
-- Minikube
-
-### Cloud
-
-- AWS
-- EC2
-- VPC
-- S3
-- IAM
-- RDS
-- Site-to-Site VPN
+The objective is to engineer a scalable, secure and highly available enterprise infrastructure that reflects real-world industry practices while serving as Betelgeuse Infra's flagship engineering showcase.
 
 ---
 
-## High-Level Architecture
+# Business Objectives
 
-The environment consists of:
+The Enterprise Infrastructure Master Lab has been designed around the following business objectives:
+
+- Build a production-style enterprise infrastructure
+- Design a resilient multi-site campus network
+- Deploy a modern data centre architecture
+- Implement enterprise-grade security
+- Provide highly available services
+- Standardise enterprise operations
+- Automate infrastructure deployment and management
+- Integrate on-premises infrastructure with AWS
+- Implement monitoring, logging and security visibility
+- Produce professional implementation documentation
+
+---
+
+# Design Philosophy
+
+Every engineering decision throughout this project is guided by five core principles.
+
+## High Availability
+
+Critical services should remain operational despite hardware, software or network failures.
+
+## Security by Design
+
+Security is incorporated into every layer of the infrastructure rather than added afterwards.
+
+## Scalability
+
+The infrastructure should support future business growth without requiring major redesign.
+
+## Operational Simplicity
+
+Infrastructure should be easy to operate, troubleshoot, document and maintain.
+
+## Infrastructure as Code
+
+Where practical, infrastructure should be automated and version controlled using modern engineering practices.
+
+---
+
+# Enterprise Architecture
+
+The completed environment will consist of:
 
 - Enterprise Campus Network
-- Branch Offices
-- Data Centre
-- Enterprise Firewall
-- Internet Edge
+- Multi-site Branch Offices
+- Enterprise WAN
+- Dual ISP Internet Edge
+- High Availability Firewalls
+- Secure VPN Infrastructure
+- Windows Server Infrastructure
+- Linux Server Infrastructure
+- Enterprise Data Centre
+- Spine-Leaf Architecture
+- VXLAN / EVPN Fabric
+- VMware Virtualisation Platform
+- Shared Enterprise Storage
+- Enterprise Monitoring Platform
+- Security Operations Platform
+- Automation Platform
 - Hybrid AWS Cloud
-- Enterprise Monitoring Stack
-- Enterprise Automation Platform
 
 ---
 
-## Project Roadmap
+# Technology Stack
 
-| Phase | Description |
-|--------|-------------|
-| 1 | Project Planning & Documentation |
-| 2 | Host & Virtualisation Preparation |
-| 3 | EVE-NG Deployment |
-| 4 | IP Addressing & VLAN Design |
-| 5 | Campus Access Layer |
-| 6 | Distribution Layer |
-| 7 | Core Layer |
-| 8 | Branch Networks |
-| 9 | WAN / MPLS / SD-WAN |
-| 10 | Internet Edge & BGP |
-| 11 | Firewalls |
-| 12 | VPN Services |
-| 13 | Windows Infrastructure |
-| 14 | Linux Infrastructure |
-| 15 | DMZ |
-| 16 | Load Balancing |
-| 17 | Storage |
-| 18 | Spine-Leaf Data Centre |
-| 19 | Server Farm |
-| 20 | Monitoring |
-| 21 | Dashboards |
-| 22 | Security Monitoring |
-| 23 | Network Management |
-| 24 | Ansible Automation |
-| 25 | Python Automation |
-| 26 | Terraform |
-| 27 | Docker |
-| 28 | Kubernetes |
-| 29 | AWS Hybrid Cloud |
-| 30 | Split DNS |
-| 31 | Security Hardening |
-| 32 | Disaster Recovery |
-| 33 | Troubleshooting |
-| 34 | Operational Processes |
-| 35 | Final Testing |
-| 36 | Portfolio Presentation |
+| Category | Technologies |
+|----------|--------------|
+| Enterprise Networking | Cisco IOS, Cisco Nexus, OSPF, BGP, HSRP, VRRP, VLANs, EtherChannel, VXLAN, EVPN |
+| Security | FortiGate, IPSec VPN, SSL VPN, NAT, ACLs, Zero Trust |
+| Microsoft Infrastructure | Windows Server 2022, Active Directory, DNS, DHCP |
+| Linux Infrastructure | Ubuntu Server, Rocky Linux, NGINX, PostgreSQL |
+| Virtualisation | VMware Workstation Pro, VMware ESXi, VMware vCenter |
+| Monitoring | Zabbix, Grafana, Prometheus, Wazuh |
+| Automation | Python, Ansible, Terraform, Git, GitHub |
+| Containers | Docker, Kubernetes, Minikube |
+| Cloud | AWS EC2, VPC, IAM, S3, RDS, Site-to-Site VPN |
 
 ---
 
-## Repository Structure
+# Engineering Standards
 
-```
-Enterprise-Infrastructure-Master-Lab
+Throughout this project every phase will follow a consistent engineering methodology.
 
-01-project-planning
-02-architecture
-03-ip-addressing
-04-campus-network
-05-branch-network
-06-wan-routing
-07-firewalls
-08-windows-infrastructure
-09-linux-services
-10-data-centre
-11-storage
-12-load-balancing
-13-monitoring
-14-security
-15-automation
-16-containers
-17-cloud
-18-disaster-recovery
-19-testing
-20-troubleshooting
+1. Design
+2. Build
+3. Verify
+4. Test
+5. Troubleshoot
+6. Document
+7. Version Control
 
-configs
-diagrams
-scripts
-screenshots
-terraform
-ansible
-```
+Every completed phase will include:
+
+- Technical documentation
+- Configuration files
+- Architecture diagrams
+- Verification evidence
+- Screenshots
+- Troubleshooting records
+- Lessons learned
+- Git commit history
 
 ---
 
-## Project Status
+# Repository Structure
 
-Current Phase:
+| Directory | Purpose |
+|-----------|---------|
+| 01-project-planning | Project planning, business requirements and governance documentation |
+| 02-architecture | High-level, logical and physical architecture documentation |
+| 03-ip-addressing | IP addressing plans, VLAN allocations and network standards |
+| 04-campus-network | Campus switching and routing implementation |
+| 05-branch-network | Branch office infrastructure |
+| 06-wan-routing | Enterprise WAN and routing technologies |
+| 07-firewalls | Firewall deployment and security policies |
+| 08-windows-infrastructure | Active Directory, DNS, DHCP and Microsoft services |
+| 09-linux-services | Linux servers and enterprise services |
+| 10-data-centre | Spine-Leaf architecture, VXLAN and EVPN |
+| 11-storage | Enterprise storage and backup |
+| 12-load-balancing | High availability and application delivery |
+| 13-monitoring | Monitoring and observability platforms |
+| 14-security | Security operations and hardening |
+| 15-automation | Infrastructure automation |
+| 16-containers | Docker and Kubernetes |
+| 17-cloud | AWS Hybrid Cloud |
+| 18-disaster-recovery | Backup and disaster recovery |
+| 19-testing | Validation and acceptance testing |
+| 20-troubleshooting | Incident reports and troubleshooting documentation |
+
+---
+
+# Current Project Status
+
+## Current Phase
 
 **Phase 1 – Project Planning & Documentation**
 
-Current Progress:
+## Progress
 
-- ✅ Project Workspace
-- ✅ Git Repository
-- ⏳ Documentation
-- ⏳ Architecture
-- ⏳ VMware Environment
+```text
+█████░░░░░░░░░░░░░░░░░░
+
+Phase 1
+
+Task 1  ✅ Project Workspace
+
+Task 2  ✅ Git Repository
+
+Task 3  ⏳ Repository Documentation
+
+Overall Progress
+
+2%
+```
 
 ---
 
-## Author
+# Long-Term Vision
+
+Upon completion, this repository will contain a fully documented enterprise infrastructure implementation incorporating networking, security, systems administration, cloud computing, automation, monitoring and disaster recovery.
+
+The project is intended to represent the quality of work delivered by Betelgeuse Infra for enterprise customers while serving as a professional engineering portfolio.
+
+---
+
+# Author
 
 **Edmond Chamunorwa**
 
-Enterprise Infrastructure Engineer | Network Engineer | Cloud & Automation Enthusiast
+Infrastructure Engineer | Network Engineer | Cloud & Automation Enthusiast
+
+**Betelgeuse Infra (Pvt) Ltd**
 
 ---
 
-## License
+# License
 
-This project is intended for educational, portfolio and professional development purposes.
-# Enterprise-Infrastructure-Master-Lab
+This project is intended for educational, research and professional portfolio purposes.
+
+© Betelgeuse Infra (Pvt) Ltd. All Rights Reserved.
