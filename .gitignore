@@ -1,0 +1,88 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfplan
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ansible
+*.retry
+vault-password*
+ansible-vault-password*
+
+# SSH keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Credentials and secrets
+credentials*
+secrets*
+passwords*
+tokens*
+api-keys*
+*.secret
+
+# Logs
+*.log
+logs/
+
+# Backups and temporary files
+*.bak
+*.tmp
+*.temp
+*.old
+*.orig
+
+# VM and large image files
+*.iso
+*.ova
+*.ovf
+*.vmdk
+*.vmem
+*.vmss
+*.vmsn
+*.vmx.lck
+*.qcow2
+*.img
+
+# Packet captures
+*.pcap
+*.pcapng
+
+# Generated reports
+reports/generated/
