@@ -88,3 +88,83 @@ Implemented changes should be included in Git history.
 | Version | Date        | Author            | Description                |
 | ------- | ----------- | ----------------- | -------------------------- |
 | 1.0     | August 2026 | Edmond Chamunorwa | Initial project change log |
+
+
+
+---
+
+## 2026-09-14 — Campus Routing & High Availability Milestone
+
+### Campus Network
+
+Completed implementation and validation of the redundant campus Layer 3 architecture.
+
+#### OSPF
+
+- Implemented OSPF Process 1 using Area 0.
+- Configured deterministic router IDs:
+  - CORE1 — 1.1.1.1
+  - CORE2 — 2.2.2.2
+  - DIST1 — 3.3.3.3
+  - DIST2 — 4.4.4.4
+- Established OSPF adjacencies between the core and distribution layers.
+- Advertised campus VLAN networks into OSPF.
+- Verified dynamic route propagation across the campus.
+- Verified redundant paths and equal-cost routes where applicable.
+- Implemented passive-interface controls on distribution switches.
+
+#### HSRP
+
+Implemented first-hop gateway redundancy across:
+
+- VLAN 10
+- VLAN 20
+- VLAN 30
+- VLAN 40
+- VLAN 50
+- VLAN 99
+
+DIST1 operates as the preferred Active gateway with priority 110.
+
+DIST2 operates as the Standby gateway with priority 100.
+
+HSRP preemption is enabled to allow DIST1 to resume the Active role following recovery.
+
+#### High-Availability Testing
+
+Performed controlled distribution-layer failure testing.
+
+Validated:
+
+- HSRP Active/Standby operation
+- Gateway failover from DIST1 to DIST2
+- Client recovery following gateway transition
+- HSRP preemption following DIST1 restoration
+- OSPF adjacency recovery
+- OSPF route convergence
+- Restoration of the preferred network topology
+
+Temporary packet loss was observed during gateway convergence and documented as part of the test results.
+
+#### Troubleshooting
+
+Documented routing issues encountered during implementation, including:
+
+- Missing OSPF VLAN advertisements
+- OSPF neighbor verification
+- Route propagation troubleshooting
+- HSRP state verification
+- Gateway failover validation
+
+### Documentation Added
+
+- `04-campus-network/campus-core-distribution-design.md`
+- `04-campus-network/ospf-design.md`
+- `04-campus-network/hsrp-design.md`
+- `04-campus-network/campus-routing-validation.md`
+- `19-testing/campus-high-availability-test-plan.md`
+- `20-troubleshooting/campus-routing-troubleshooting.md`
+
+### Result
+
+The campus network now provides redundant Layer 3 routing, dynamic route exchange, resilient default gateways, and tested distribution-layer failover.
